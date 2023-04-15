@@ -98,7 +98,7 @@ a{
 }
 
 /*Para movil*/
-@media (min-width:500px) {
+@media (max-width:500px) {
     header{
         font-size: 10px;
     }   
