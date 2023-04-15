@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="integrantesestilo.css">
+    <link rel="icon shorcut" href="Imagenes/tecno art.png">
+    <script type="text/javascript" src="Integrantes.js"></script>
+    <title>Tecno Art</title>
+</head>
+<body>
+    <header>
+        <img src="Imagenes/tecno art.png" alt="icono de Tecno Art">
+        <h1>INTEGRANTES</h1>
+    </header>
+    <div class="navegacion">
+        <ul class="nav">
+            <li class="li"><a href="index.html">Inicio</a></li>
+            <li class="li"><a href="">Videos</a>
+                <ul>
+                    <li><a href="">Ecuaciones Diferenciales</a></li>
+                    <li><a href="">Programación Basica</a></li>
+                    <li><a href="">Programación de VIdeojuegos</a></li>
+                </ul>
+            </li>
+    
+            <li class="li"><a href="">Servicios</a>
+                <ul>
+                    <li><a href="">Animaciones</a></li>
+                    <li><a href="">Grabacion y Ediciones</a></li>
+                    <li><a href="">Diseño Grafico</a></li>
+                </ul>
+            </li>
+            <li class="li"><a href="">Contactanos</a></li>
+            <li class="li"><a href="Integrantes.html">Integrantes</a>
+                <ul>
+                    <li><a id="0" href="">Ing. Molina</a></li>
+                    <li><a id="1" href="">Ronaldo Cahuasiri</a></li>
+                    <li><a id="2" href="">Luis Pastrana</a></li>
+                </ul>
+            </li>           
+        </ul>    
+    </div>
+    <div class="Integrantes">
+        <img id="0" src="Imagenes/Integrantes/0.png" alt="Ing. Molina" onclick="info(0)">
+        <img id="1" src="Imagenes/crunchyroll.png" alt="Ronaldo Cahuasiri" onclick="info(1)">
+        <img id="2" src="Imagenes/crunchyroll.png" alt="Adam Avendaño" onclick="info(2)">
+        <img id="3" src="Imagenes/crunchyroll.png" alt="Lex" onclick="info(3)">
+        <img id="4" src="Imagenes/crunchyroll.png" alt="Jois" onclick="info(4)">
+        <img id="5" src="Imagenes/crunchyroll.png" alt="Fernando" onclick="info(5)">
+        <img id="6" src="Imagenes/crunchyroll.png" alt="Cristian" onclick="info(6)">
+        <img id="7" src="Imagenes/crunchyroll.png" alt="Moises" onclick="info(7)">
+        <img id="8" src="Imagenes/crunchyroll.png" alt="Kevin" onclick="info(8)">
+        <img id="9" src="Imagenes/Integrantes/9.jpg" alt="Luis Pastrana" onclick="info(9)">
+    </div>
+    <div class="Presentacion">
+        <div class="Perfil">
+            <div class="img">
+                <img src="Imagenes/Integrantes/sin foto.jpg" alt="Foto de perfil" id="Perfil">
+            </div>
+            
+            <h2 id="Nombre">Nombre Completo</h2>
+        </div>
+        <div class="Datos">
+            <div class="Lizquierdo">
+                <div class="info">
+                    <img src="Imagenes/fecha.png" alt="Nacimiento">
+                    <h3 id="cumpleaños">dd/mm/aaaa</h3>
+                </div>
+                <div class="info">
+                    <img src="Imagenes/ubicacion.png" alt="Lugar de Nacimiento">
+                    <h3 id="nacimiento">Lugar de Nacimiento</h3>
+                </div>
+                <h3>REDES SOCIALES</h3>
+                <div class="info">
+                    <img class="facebook" src="Imagenes/facebook.png" alt="facebook">
+                    <div class="Titulo">
+                        <h4>Facebook</h4>
+                        <a id="facebook" href="#">link facebook</a>
+                    </div>
+                </div>
+                <div class="info">
+                    <img class="instagram" src="Imagenes/instagram.png" alt="Instagram">
+                    <div class="Titulo">
+                        <h4>Instagram</h4>
+                        <a id="instagram" style="text-decoration: none;" href="https://instagram.com/fernan__139?igshid=ZDdkNTZiNTM=">link instagram</a>
+                    </div>
+                    
+                </div>
+                <div class="info">
+                    <img class="tiktok" src="Imagenes/tik tok.png" alt="Tik tok">
+                    <div class="Titulo">
+                        <h4>Tik Tok</h4>
+                        <a id="tiktok" href="#">link tiktok</a>
+                    </div>
+                    
+                </div>
+                <div class="info">
+                    <img class="whatsapp" src="Imagenes/whatsapp.png" alt="Whatsapp">
+                    <div class="Titulo">
+                        <h4>Whatsapp</h4>
+                        <a id="whatsapp" href="https://wa.me/59167922809">Número de whatsapp</a>
+                    </div>
+                    
+                </div>
+                <div class="info">
+                    <img class="telegram" src="Imagenes/telegram.png" alt="Telegram">
+                    <div class="Titulo">
+                        <h4>Telegram</h4>
+                        <a id="telegram" href="#">Número de Telegram</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="Lderecho">
+                <div class="derecga">
+                    <h3>EXPERIENCIA</h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var Equipo = [0[10],1[10]]; 
+    
+        function info(x){
+            console.log(x);
+            switch(x){
+                case 0:
+                    document.getElementById("Perfil").src = "Imagenes/Integrantes/0.png";
+                    document.getElementById("Nombre").innerHTML = "Ing. Luis Molina" ;
+                    document.getElementById("cumpleaños").innerHTML = "25/05/1990";
+                    document.getElementById("facebook").href = "https://www.facebook.com/luisfernando.pastranaquispe.3?mibextid=ZbWKwL";
+                    document.getElementById("facebook").innerHTML = "Luis Fer Pastrana Quispe";
+                    document.getElementById("instagram").href = "https://instagram.com/fernan__139?igshid=ZDdkNTZiNTM=";
+                    document.getElementById("instagram").innerHTML = "Fer__139";
+                    document.getElementById("tiktok").href = "";
+                    document.getElementById("tiktok").innerHTML = "Fernanshow.tiktok";
+                    document.getElementById("whatsapp").href = "https://wa.me/67922809";
+                    document.getElementById("whatsapp").innerHTML = "+59167922809";
+                    document.getElementById("telegram").href = "https://wa.me/65452649";
+                    document.getElementById("telegram").innerHTML = "+59165452649";
+
+                    break;
+                case 1:
+                    document.getElementById("Nombre").innerHTML = "Ronaldo Cahuasiri";
+                    document.getElementById("cumpleaños").innerHTML = "15/02/2000";
+                    break;
+                case 2:
+                    document.getElementById("Nombre").innerHTML = "Adam Avendaño" ;
+                    document.getElementById("cumpleaños").innerHTML = "25/03/79";
+                    break;
+                case 3:
+                    document.getElementById("Nombre").innerHTML = "LEX";
+                    document.getElementById("cumpleaños").innerHTML = "15/02/2000";
+                    break;
+                case 4:
+                    document.getElementById("Nombre").innerHTML = "Fernanda" ;
+                    document.getElementById("cumpleaños").innerHTML = "25/05/1990";
+                    break;
+                case 5:
+                    document.getElementById("Nombre").innerHTML = "Angeles Calle";
+                    document.getElementById("cumpleaños").innerHTML = "15/02/2000";
+                    break;
+                case 6:
+                    document.getElementById("Nombre").innerHTML = "Kevin Romay" ;
+                    document.getElementById("cumpleaños").innerHTML = "25/05/1990";
+                    break;
+                case 7:
+                    document.getElementById("Nombre").innerHTML = "Moises";
+                    document.getElementById("cumpleaños").innerHTML = "15/02/2000";
+                    break;
+                case 8:
+                    document.getElementById("Nombre").innerHTML = "Cristian" ;
+                    document.getElementById("cumpleaños").innerHTML = "25/04/1990";
+                    break;
+                case 9:
+                    document.getElementById("Perfil").src = "Imagenes/Integrantes/9.png";
+                    document.getElementById("Nombre").innerHTML = "Luis Fernando Pastrana Quispe" ;
+                    document.getElementById("nacimiento").innerHTML = "Villazón"
+                    document.getElementById("cumpleaños").innerHTML = "12/02/2002";
+                    document.getElementById("facebook").href = "https://www.facebook.com/luisfernando.pastranaquispe.3?mibextid=ZbWKwL";
+                    document.getElementById("facebook").innerHTML = "Luis Fern Pastrana Quispe";
+                    document.getElementById("instagram").href = "https://instagram.com/fernan__139?igshid=ZDdkNTZiNTM=";
+                    document.getElementById("instagram").innerHTML = "Fer__139";
+                    document.getElementById("tiktok").href = "https://www.tiktok.com/@fernanshow.tiktok?_r=1&_d=e2i6dim0idf102&language=es&sec_uid=MS4wLjABAAAAdVyk6FF9C73-ERuuz5VjEoJFZIJ0GohqZokaMjwSG_xkaJPIluY2F7bdt3xl0F_J&share_author_id=6817510697087124485&source=h5_m&u_code=dc23i26cg3kl69&timestamp=1677762384&user_id=6817510697087124485&sec_user_id=MS4wLjABAAAAdVyk6FF9C73-ERuuz5VjEoJFZIJ0GohqZokaMjwSG_xkaJPIluY2F7bdt3xl0F_J&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7191929535292802822&share_link_id=1fd26b78-39e4-4fbf-969c-397a7ebab658&share_app_id=1233&ugbiz_name=Account&ug_btm=b8727%2Cb4907";
+                    document.getElementById("tiktok").innerHTML = "Fernanshow.tiktok";
+                    document.getElementById("whatsapp").href = "https://wa.me/67922809";
+                    document.getElementById("whatsapp").innerHTML = "+59167922809";
+                    document.getElementById("telegram").href = "https://t.me/Luis_Pastrana139";
+                    document.getElementById("telegram").innerHTML = "+59167922809";
+                    break;
+                default:
+                    console.log("No se presiono ningun integrante");
+                    break;
+            }
+            
+        }
+    </script>
+    <footer>
+    </footer>
+</body>
+</html>
